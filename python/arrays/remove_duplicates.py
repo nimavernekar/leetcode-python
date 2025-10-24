@@ -11,8 +11,8 @@ def remove_duplicates(nums):
     
     unique = 0
 
-    for i in range(1, len(nums)):
-        if nums[i]!=nums[unique]:
+    for i in range(1,len(nums)):
+        if nums[i] != nums[unique]:
             unique+=1
             nums[unique] = nums[i]
     return nums[:unique+1]
